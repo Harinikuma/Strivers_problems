@@ -1,0 +1,26 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+class Solution{
+    public void pattern7(int N){
+        for (int i =1;i<=N*2-1;i++){
+            int stars = i;
+            if(i > N){
+                stars = 2*N-i;
+            }
+            for(int k=0; k < stars; k++ ){
+                System.out.print("*");
+            }
+            
+        
+            System.out.println();
+        }
+    }
+    
+}
+class Main {
+    public static void main(String[] args) {
+        Solution s = new Solution();
+        int N = 6;
+        s.pattern7(N);
+    }
+}
